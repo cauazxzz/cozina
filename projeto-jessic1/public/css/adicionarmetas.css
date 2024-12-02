@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #010e3d; /* Cor de fundo azul */
+    color: white; /* Cor do texto para contraste */
+}
+
+.navbar {
+    background-color: white; /* Cor de fundo branco para a navbar */
+    padding: 20px 0; /* Aumenta o espaçamento vertical */
+    margin: 0; /* Remove a margem para encostar nas laterais */
+    width: 100%; /* Define a largura como 100% */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.navbar a {
+    color: #010e3d; /* Cor dos links */
+    text-decoration: none;
+    margin: 0 20px; /* Margem entre os links */
+    font-weight: bold;
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    padding: 15px 0; /* Ajusta o padding vertical */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.navbar a:hover {
+    background-color: rgba(33, 33, 97, 0.322);
+}
+
+h1 {
+    text-align: left; /* Alinha o título à esquerda */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.container {
+    display: flex; /* Permite que os filhos sejam alinhados em linha */
+    justify-content: space-between; /* Espaço entre o formulário e a imagem */
+    align-items: flex-start; /* Alinha o conteúdo do início */
+    flex-wrap: wrap; /* Permite que o conteúdo envolva em telas menores */
+}
+
+.form-container {
+    width: 60%; /* Ajusta a largura do formulário */
+    max-width: 600px; /* Largura máxima para telas grandes */
+}
+
+.image-container {
+    width: 50%; /* Aumenta a largura da imagem para 50% */
+    text-align: center; /* Centraliza a imagem */
+}
+
+.image-container img {
+    max-width: 100%; /* Faz a imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Faz a imagem se comportar como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaçamento entre os grupos do formulário */
+}
+
+label {
+    display: block; /* Garante que o label ocupe uma linha inteira */
+    margin-bottom: 5px; /* Espaço abaixo do label */
+    color: #fff; /* Cor do texto do rótulo */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%; /* Usa 100% da largura do contêiner pai */
+    padding: 5px; /* Aumenta o espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 20px; /* Arredonda os cantos */
+    background-color: #fff; /* Fundo branco para os campos de entrada */
+    color: #010e3d; /* Texto no campo de entrada */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #00aaff; /* Altera a borda ao focar */
+    outline: none; /* Remove a borda padrão do navegador */
+}
+
+button {
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    margin-right: 10px; /* Espaço à direita dos botões */
+    border: none; /* Remove a borda padrão */
+    border-radius: 20px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    background-color: #eaee08; /* Cor de fundo para os botões */
+    color: #010e3d; /* Cor do texto do botão */
+    transition: background-color 0.3s; /* Transição suave para cor de fundo */
+}
+
+button:hover {
+    background-color: rgba(133, 133, 0, 0.726); /* Cor ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column; /* Empilha os itens verticalmente em telas menores */
+    }
+    .container {
+        flex-direction: column; /* Muda para coluna em telas menores */
+    }
+
+    .form-container,
+    .image-container {
+        width: 100%; /* Ocupa 100% da largura */
+        max-width: none; /* Remove a largura máxima */
+    }
+
+    .image-container {
+        margin-top: 20px; /* Adiciona espaço acima da imagem */
+    }
+}

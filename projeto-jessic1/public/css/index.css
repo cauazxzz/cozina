@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color:#010E3D; 
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-login button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #F3F6EF; 
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0); 
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #EBEAE3; 
+    transform: scale(1.05);
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #F3F6EF; 
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 40PX 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a {
+    color: #5c5c5c; /* sombra do link */
+    text-decoration: none;
+    /*remove os os sublinhado que formam a lista */
+    display: inline-block;
+    transition: .2s;
+
+}
+
+
+header .btn-login button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #F3F6EF; 
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0); 
+}
+
+header .btn-login button:hover {
+    box-shadow: 0px 0px 8px #F3F6EF; 
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white; /* cor letra do titulo h1 */
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #F3F6EF; /* cor letra h1 dentro do span */
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white; /* cor do paragrafo */
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/*ESTILO DO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: white; 
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #F3F6EF; 
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #F3F6EF; 
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+
+}
+
+/* ESTILO DO RODAPÉ */
+.footer {
+    padding: 40px;
+}
+
+.borda {
+    border-top: 2px solid #F3F6EF; 
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    border-bottom: 2px #F3F6EF; 
+}
+
+footer .line-footer p i { 
+    color: #F3F6EF; 
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: white; 
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 1062px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column-reverse;
+    }
+    h2.titulo{
+        font-size:34px ;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .btn-social{
+        text-align: center;
+    }
+    .img-sobre img{
+        width: 100%;
+
+    }
+    /* RODAPE */
+    Footer .flex{
+        flex-direction: column;
+    }
+    footer .line-footer{
+        text-align: center;
+    }
+
+}

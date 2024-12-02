@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #010e3d; /* Cor de fundo azul */
+    color: white; /* Cor do texto para contraste */
+    line-height: 1.6; /* Melhora a legibilidade */
+}
+
+.navbar {
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 15px 0; /* Espaçamento vertical */
+    margin: 0;
+    width: 100%; /* Largura completa */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0; /* Navbar fixa no topo */
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #010e3d; /* Cor dos links */
+    text-decoration: none;
+    margin: 0 20px; /* Maior espaçamento entre os links */
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 25px; /* Maior espaçamento interno para destaque */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: rgba(33, 33, 97, 0.2);
+    color: #00aaff;
+}
+
+.container {
+    max-width: 1400px; /* Aumenta o limite da largura máxima */
+    margin: 40px auto; /* Maior espaçamento superior e inferior */
+    padding: 0 30px; /* Maior espaçamento lateral */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px; /* Título maior para telas grandes */
+    margin-bottom: 30px;
+    color: #eaee08; /* Destaque no título */
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    padding: 30px 50px; /* Aumenta o espaçamento interno */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    width: 100%;
+    max-width: 800px; /* Maior largura para telas grandes */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #eaee08; /* Destaque no rótulo */
+    font-size: 18px; /* Aumenta o tamanho dos rótulos */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 12px; /* Maior espaçamento interno */
+    margin-bottom: 20px; /* Maior espaçamento entre os campos */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    color: #010e3d;
+    font-size: 16px; /* Aumenta o tamanho do texto nos campos */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #00aaff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.5); /* Destaque maior no foco */
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Maior espaçamento acima dos botões */
+}
+
+button {
+    padding: 15px 30px; /* Botões maiores e mais destacados */
+    border: none;
+    border-radius: 10px;
+    font-size: 18px; /* Texto maior nos botões */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.voltar {
+    background-color: #eaee08;
+    color: #010e3d;
+}
+
+button.voltar:hover {
+    background-color: rgba(133, 133, 0, 0.726);
+}
+
+button.salvar {
+    background-color: #00aaff;
+    color: white;
+}
+
+button.salvar:hover {
+    background-color: #007acc;
+}
+
+/* Ajustes para telas maiores */
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 36px; /* Título maior */
+        margin-bottom: 40px; /* Mais espaçamento abaixo do título */
+    }
+
+    form {
+        padding: 40px 60px; /* Mais espaçamento interno no formulário */
+        max-width: 1000px; /* Largura máxima para telas muito grandes */
+    }
+
+    .navbar a {
+        font-size: 22px; /* Links maiores na navbar */
+        padding: 12px 30px; /* Mais espaçamento interno */
+    }
+
+    button {
+        padding: 15px 40px; /* Botões ainda mais destacados */
+        font-size: 20px;
+    }
+
+    .buttons {
+        margin-top: 40px; /* Mais espaçamento acima dos botões */
+    }
+}

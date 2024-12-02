@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001744;
+    color: #f9faf7;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001744;
+    padding: 20px;
+}
+
+.logo-container {
+    background-color: #001744;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.btn-voltar {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #001744;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.edit-container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #f9faf7;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    background-color: #f9faf7;
+    font-size: 1.1rem;
+    color: #001744;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-excluir, .btn-salvar {
+    background-color: #ffd700;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #001744;
+    cursor: pointer;
+}
+
+.right-section {
+    width: 50%;
+    background-color: #f9faf7;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.right-section h2 {
+    font-size: 1.8rem;
+    color: #001744;
+    margin-bottom: 20px;
+}
+
+.adicionar-receita {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-adicionar {
+    background-color: #ffd700;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    color: #001744;
+    cursor: pointer;
+}
+
+.recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipe-item {
+    background-color: #f9faf7;
+    color: #001744;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recipe-item h3 {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-item span {
+    color: #ffd700;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.recipe-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+}

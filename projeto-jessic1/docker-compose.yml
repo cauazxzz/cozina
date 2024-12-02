@@ -1,0 +1,60 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/var/www/html
+    environment:
+      DB_HOST: mariadb
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      SMTP_SERVER: mailhog # Usando MailHog ou o SMTP do Gmail
+      SMTP_PORT: 1025 # Porta SMTP do MailHog (para testes locais) ou 587 para Gmail
+      SMTP_USERNAME: "" # Não necessário para o MailHog
+      SMTP_PASSWORD: "" # Não necessário para o MailHog
+    depends_on:
+      - mariadb
+      - mailhog # Dependência para o MailHog, se estiver usando para testes
+
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    depends_on:
+      - mariadb
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "8081:80"
+
+  mailhog: # Serviço MailHog para capturar e-mails
+    image: mailhog/mailhog
+    container_name: mailhog
+    ports:
+      - "1025:1025"   # Porta SMTP para enviar e-mails
+      - "8025:8025"   # Interface web para visualizar os e-mails capturados
+    restart: always
+
+volumes:
+  mariadb_data:

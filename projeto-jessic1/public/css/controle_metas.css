@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #010e3d; /* Cor de fundo azul */
+    color: white; /* Cor do texto para contraste */
+}
+
+.navbar {
+    background-color: white; /* Cor de fundo branco para a navbar */
+    padding: 20px 0; /* Aumenta o espaçamento vertical */
+    margin: 0; /* Remove a margem para encostar nas laterais */
+    width: 100%; /* Define a largura como 100% */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.navbar a {
+    color: #010e3d; /* Cor dos links */
+    text-decoration: none;
+    margin: 0 20px; /* Margem entre os links */
+    font-weight: bold;
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    padding: 15px 0; /* Ajusta o padding vertical */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.navbar a:hover {
+    background-color: rgba(33, 33, 97, 0.322);
+}
+
+
+/* Estilo do container principal */
+.container {
+    padding: 20px; /* Espaçamento interno */
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o container na página */
+    text-align: center; /* Centraliza o texto */
+}
+
+.container h1 {
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #ffffff; /* Cor dourada para o título */
+}
+
+.image-container {
+    width: 50%; /* Aumenta a largura da imagem para 50% */
+    text-align: center; /* Centraliza a imagem */
+}
+
+.image-container img {
+    max-width: 200%; /* Faz a imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Faz a imagem se comportar como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo do campo de busca e botão */
+.search-container {
+    display: flex; /* Flexbox para alinhar campo e botão de busca */
+    justify-content: center; /* Centraliza o conteúdo */
+    margin-bottom: 20px; /* Espaço abaixo do campo de busca */
+}
+
+.search-container input[type="text"] {
+    padding: 10px; /* Espaçamento interno do campo de texto */
+    width: 200px; /* Largura do campo de texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px 0 0 5px; /* Bordas arredondadas à esquerda */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+.search-container button {
+    padding: 10px; /* Espaçamento interno do botão */
+    background-color: #ffd700; /* Cor de fundo dourada */
+    border: none; /* Remove a borda padrão */
+    border-radius: 0 5px 5px 0; /* Bordas arredondadas à direita */
+    cursor: pointer; /* Mostra um cursor de "mãozinha" */
+    color: #0a1b5a; /* Texto em azul escuro */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%; /* Largura total do container */
+    border-collapse: collapse; /* Remove espaçamento entre bordas das células */
+    margin-top: 20px; /* Espaço acima da tabela */
+    background-color: white; /* Fundo branco da tabela */
+    color: #0a1b5a; /* Texto em azul escuro */
+}
+
+th, td {
+    padding: 10px; /* Espaçamento interno das células */
+    border: 1px solid #ddd; /* Borda de 1px e cinza claro nas células */
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+th {
+    background-color: #0a1b5a; /* Fundo azul escuro para cabeçalhos */
+    color: white; /* Texto branco nos cabeçalhos */
+    font-weight: bold; /* Texto em negrito nos cabeçalhos */
+}
+
+/* Estilo do botão "Adicionar Metas" */
+.add-meta-btn {
+    padding: 10px 20px; /* Espaçamento interno vertical e horizontal */
+    background-color: #ffd700; /* Fundo dourado */
+    color: #0a1b5a; /* Texto em azul escuro */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de "mãozinha" */
+    margin-left: 10px; /* Espaço à esquerda do botão */
+}
+

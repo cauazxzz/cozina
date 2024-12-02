@@ -1,0 +1,149 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #010e3d; /* Fundo azul escuro */
+    color: #ffffff; /* Texto branco */
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 15px 0; /* Espaçamento vertical */
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #010e3d; /* Cor dos links */
+    text-decoration: none;
+    margin: 0 20px; /* Espaçamento entre os links */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px; /* Aumenta o espaço interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(33, 33, 97, 0.2);
+    color: #00aaff;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 36px; /* Tamanho maior para telas grandes */
+    margin: 30px 0;
+    color: #eaee08; /* Destaque para o título */
+}
+
+/* Formulário */
+form {
+    background: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    margin: 20px auto; /* Centraliza o formulário */
+    padding: 30px 50px; /* Espaçamento interno */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    max-width: 900px; /* Ajuste para telas grandes */
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px; /* Tamanho maior para rótulos */
+    color: #eaee08; /* Destaque nos rótulos */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 12px; /* Espaçamento interno maior */
+    margin-bottom: 20px; /* Espaçamento entre campos */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #010e3d;
+    background: #ffffff; /* Fundo branco */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #00aaff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.5); /* Destaque no foco */
+}
+
+button {
+    padding: 15px 30px; /* Botões grandes */
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #00aaff;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #007acc;
+}
+
+button[type="button"] {
+    background-color: #eaee08;
+    color: #010e3d;
+}
+
+button[type="button"]:hover {
+    background-color: rgba(133, 133, 0, 0.8);
+}
+
+/* Imagem */
+.image-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1200px) {
+    form {
+        padding: 40px 60px; /* Maior espaçamento interno */
+    }
+
+    h1 {
+        font-size: 40px; /* Título maior */
+    }
+
+    .navbar a {
+        font-size: 20px; /* Links maiores */
+        padding: 12px 30px; /* Mais espaçamento interno */
+    }
+
+    button {
+        font-size: 20px; /* Texto maior nos botões */
+    }
+}

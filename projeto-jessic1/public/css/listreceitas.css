@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001744;
+    color: #f9faf7;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001744;
+    padding: 20px;
+}
+
+.logo-container {
+    background-color: #001744;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.btn-voltar {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #f9faf7;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f9faf7;
+    color: #001744;
+    width: 300px;
+}
+
+.btn-pesquisar {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-arrow {
+    background-color: #ffd700;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #001744;
+    cursor: pointer;
+}
+
+.recipe-card {
+    background-color: #fff;
+    color: #001744;
+    border-radius: 8px;
+    width: 180px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.btn-adicionar {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #001744;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-adicionar span {
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.actions a {
+    color: #001744;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
