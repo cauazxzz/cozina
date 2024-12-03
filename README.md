@@ -1,6 +1,5 @@
-
 📖 Projeto de Site de Culinária
-Bem-vindo ao repositório da cozina, um projeto em desenvolvimento que visa criar uma plataforma completa para gerenciar receitas, livros culinários e metas relacionadas à cozinha. Este projeto oferece funcionalidades específicas para diferentes tipos de usuários, garantindo uma experiência personalizada e eficiente.
+Bem-vindo ao repositório da Cozina, um projeto em desenvolvimento que visa criar uma plataforma completa para gerenciar receitas, livros culinários e metas relacionadas à cozinha. Este projeto oferece funcionalidades específicas para diferentes tipos de usuários, garantindo uma experiência personalizada e eficiente.
 
 ⚙️ Funcionalidades Implementadas
 Login por Cargo:
@@ -24,14 +23,13 @@ Sistema para definir permissões específicas para cada tipo de usuário.
 
 🛠️ Tecnologias Utilizadas
 Backend:
+
 PHP
 SQL
-
 Frontend:
 
 HTML e CSS básicos
 JavaScript
-
 🚧 Status do Projeto
 O projeto ainda está em desenvolvimento e possui funcionalidades a serem finalizadas, como:
 
@@ -39,17 +37,20 @@ Implementação completa das telas específicas para cada cargo.
 Finalização do gerenciamento de livros culinários e metas.
 Refinamento no sistema de edição e exclusão de itens.
 Melhorias na experiência de usuário (UX/UI).
+
 🚀 Como Executar o Projeto
 Clone este repositório:
-
 bash
 Copiar código
 git clone https://github.com/cauazxzz/cozina.git
 Configure um ambiente local com suporte a PHP e SQL.
-
 Importe o banco de dados (o arquivo .sql está na pasta).
-
 Inicie o servidor e acesse o site pelo navegador.
+
+🖼️ Galeria de Imagens
+![Captura de tela 2024-12-02 215106](https://github.com/user-attachments/assets/4f732f4d-e2b3-4001-911b-7769c59368e3)
+![Captura de tela 2024-12-02 215358](https://github.com/user-attachments/assets/2697909d-edea-4b48-bf57-03bc066a11ca)
+
 
 📋 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, correções ou novas ideias.
