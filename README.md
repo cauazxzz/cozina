@@ -30,13 +30,14 @@ Frontend:
 
 HTML e CSS básicos
 JavaScript
+
 🚧 Status do Projeto
 O projeto ainda está em desenvolvimento e possui funcionalidades a serem finalizadas, como:
 
-Implementação completa das telas específicas para cada cargo.
-Finalização do gerenciamento de livros culinários e metas.
-Refinamento no sistema de edição e exclusão de itens.
-Melhorias na experiência de usuário (UX/UI).
+-Implementação completa das telas específicas para cada cargo.
+-Finalização do gerenciamento de livros culinários e metas.
+-Refinamento no sistema de edição e exclusão de itens.
+-Melhorias na experiência de usuário (UX/UI).
 
 🚀 Como Executar o Projeto
 Clone este repositório:
