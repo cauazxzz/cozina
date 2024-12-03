@@ -31,7 +31,8 @@ Frontend:
 HTML e CSS básicos
 JavaScript
 
-🚧 Status do Projeto
+🚧 Status do Projeto:
+
 O projeto ainda está em desenvolvimento e possui funcionalidades a serem finalizadas, como:
 
 -Implementação completa das telas específicas para cada cargo.
