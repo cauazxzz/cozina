@@ -49,6 +49,8 @@ Inicie o servidor e acesse o site pelo navegador.
 
 🖼️ Galeria de Imagens
 ![Captura de tela 2024-12-02 215106](https://github.com/user-attachments/assets/4f732f4d-e2b3-4001-911b-7769c59368e3)
+
+
 ![Captura de tela 2024-12-02 215358](https://github.com/user-attachments/assets/2697909d-edea-4b48-bf57-03bc066a11ca)
 
 
