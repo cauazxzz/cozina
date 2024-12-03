@@ -41,6 +41,7 @@ O projeto ainda está em desenvolvimento e possui funcionalidades a serem finali
 -Finalização do gerenciamento de livros culinários e metas.
 -Refinamento no sistema de edição e exclusão de itens.
 -Melhorias na experiência de usuário (UX/UI).
+-Melhorias na navegacao entre as telas
 
 🚀 Como Executar o Projeto
 
